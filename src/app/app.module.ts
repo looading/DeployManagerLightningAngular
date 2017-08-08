@@ -4,14 +4,22 @@ import { RouterModule } from '@angular/router';
 import { NglModule } from 'ng-lightning/ng-lightning';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { MainContainerComponent } from './components/main-container/main-container.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { NotificationComponent } from './components/notification/notification.component';
+
+import {
+  HeaderComponent,
+  FooterComponent,
+  MainContainerComponent,
+  NotificationComponent,
+  HeaderSearchComponent,
+  HeaderToolsComponent,
+  NavBarComponent, } from './components/';
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
+
+
+import { StateService } from './state.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +27,10 @@ import { PagesModule } from './pages/pages.module';
     HeaderComponent,
     MainContainerComponent,
     FooterComponent,
-    NotificationComponent
+    NotificationComponent,
+    HeaderSearchComponent,
+    HeaderToolsComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +39,9 @@ import { PagesModule } from './pages/pages.module';
     PagesModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    StateService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

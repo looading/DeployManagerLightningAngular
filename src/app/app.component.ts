@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NglConfig } from 'ng-lightning/ng-lightning';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private config: NglConfig) {
+    console.log(this.config);
+  }
 }

@@ -1,3 +1,10 @@
-<p>
-  notification works!
-</p>
+  <ngl-notification
+    *ngIf="showAlert"
+    [type]="notification.type"
+    [severity]="notification.severity"
+    (nglNotificationClose)="onClose($event)"
+    [timeout]="notification.timeout"
+    closeAssistiveText="Close"
+    class="slds-theme--alert-texture">
+    <h2>{{ notification.message }}</h2>
+  </ngl-notification>
