@@ -5,7 +5,7 @@ import { StateService, Notification } from '../../state.service';
 @Component({
   selector: 'app-notification',
   templateUrl: './notification.component.html',
-  styleUrls: ['./notification.component.css']
+  styleUrls: ['./notification.component.scss']
 })
 export class NotificationComponent implements OnInit {
   showAlert = false;

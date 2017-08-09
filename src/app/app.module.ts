@@ -12,7 +12,9 @@ import {
   NotificationComponent,
   HeaderSearchComponent,
   HeaderToolsComponent,
-  NavBarComponent, } from './components/';
+  NavBarComponent,
+  SideBarComponent,
+  SideContentComponent, } from './components/';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +33,8 @@ import { StateService } from './state.service';
     HeaderSearchComponent,
     HeaderToolsComponent,
     NavBarComponent,
+    SideBarComponent,
+    SideContentComponent,
   ],
   imports: [
     BrowserModule,
