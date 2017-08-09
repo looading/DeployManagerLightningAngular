@@ -1,0 +1,21 @@
+:host {
+  .slds-global-header__item {
+    display: flex;
+    padding-left: .5rem;
+    .collspan {
+      border: none;
+      background-color: transparent;
+      margin-right: 10px;
+      outline: none;
+      transition: transform .4s cubic-bezier(.25,.8,.25,1);
+
+      &.open {
+        transform: rotate3d(0, 0, 1, 90deg);
+      }
+
+      &.close {
+        transform: rotate3d(0, 0, 1, 0);
+      }
+    }
+  }
+}

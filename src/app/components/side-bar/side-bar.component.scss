@@ -1,0 +1,26 @@
+:host ::ng-deep {
+  position: fixed;
+  top: 50px;;
+  left: 0;
+  min-width: 240px;
+  height: calc(100vh - 64px);
+  box-shadow: 6px 0 6px rgba(0,0,0,.1);
+  background-color: #fafafa;
+  z-index: 500;
+  transition: transform .4s cubic-bezier(.25,.8,.25,1);
+  overflow-y: scroll;
+
+  .slds-tree_container{
+    padding: 10px;
+
+    .slds-tree__item  {
+      justify-content: space-between;
+      &:hover, &.active {
+        background-color: #182F5D;
+        .slds-truncate, .slds-assistive-text {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

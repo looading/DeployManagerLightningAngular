@@ -1,3 +1,22 @@
-::ng-deep main {
-  margin-top: 50px;
+:host {
+  main {
+    margin-top: 50px;
+  }
+
+  .side-bar-open {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .side-bar-close {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .side-content-transition {
+    transition-duration: .4s;
+    transition-timing-function: cubic-bezier(.25,.8,.25,1);
+    transition-property: transform,margin-left,margin-right;
+    position: relative;
+    overflow: auto;
+    display: block;
+  }
 }

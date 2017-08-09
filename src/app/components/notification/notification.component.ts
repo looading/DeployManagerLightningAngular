@@ -23,13 +23,12 @@ export class NotificationComponent implements OnInit {
   ngOnInit() {
     this
       .globalState
-      .notificationState
-      .subscribe(({eventName, data}) => {
-        if (eventName === 'open') {
+      .subscribe('notification', (data) => {
+        if (data.eventName === 'open') {
           this.showAlert = true;
           Object.assign(this.notification, data);
         }
-        if (eventName === 'close') {
+        if (data.eventName === 'close') {
           this.showAlert = false;
         }
       });

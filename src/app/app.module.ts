@@ -8,13 +8,13 @@ import { AppComponent } from './app.component';
 import {
   HeaderComponent,
   FooterComponent,
-  MainContainerComponent,
   NotificationComponent,
   HeaderSearchComponent,
   HeaderToolsComponent,
   NavBarComponent,
   SideBarComponent,
-  SideContentComponent, } from './components/';
+  SideContentComponent,
+  MenuItemComponent, } from './components/';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +27,6 @@ import { StateService } from './state.service';
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainContainerComponent,
     FooterComponent,
     NotificationComponent,
     HeaderSearchComponent,
@@ -35,6 +34,7 @@ import { StateService } from './state.service';
     NavBarComponent,
     SideBarComponent,
     SideContentComponent,
+    MenuItemComponent,
   ],
   imports: [
     BrowserModule,

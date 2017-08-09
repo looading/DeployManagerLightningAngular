@@ -1,10 +1,15 @@
-<app-header></app-header>
+<app-header class="header"></app-header>
 <app-notification class="slds-notify_container"></app-notification>
 <main class="slds-p-horizontal_xx-large slds-p-top_x-large slds-p-bottom_x-large">
-  <app-side-bar></app-side-bar>
-  <app-side-content>
-    <app-nav-bar class="slds-m-bottom_x-large"></app-nav-bar>
-    <router-outlet></router-outlet>
+  <app-side-bar
+    class="side-bar side-bar-close"
+    [ngClass]="{ 'side-bar-open': open, 'side-bar-close': !open }"
+    [menuData]="menuData"></app-side-bar>
+  <app-side-content
+    class="side-content side-content-transition"
+    [ngStyle]="{ 'margin-left': (open ? '240px' : '0px'), 'marign-right': '0px', 'transform': 'translate3d(0px, 0px, 0px)' }">
+      <app-nav-bar class="slds-m-bottom_x-large"></app-nav-bar>
+      <router-outlet></router-outlet>
   </app-side-content>
 </main>
-<app-footer></app-footer>
+<app-footer class="footer"></app-footer>

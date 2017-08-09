@@ -12,7 +12,7 @@ export class UserComponent implements OnInit {
   constructor(private globalState: StateService) { }
 
   notify() {
-    this.globalState.notification('open', {
+    this.globalState.notifyDataChange('notification', {
       message: 'hello',
     });
   }

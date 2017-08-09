@@ -2,7 +2,19 @@
   <a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text_focus">Skip to Navigation</a>
   <a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text_focus">Skip to Main Content</a>
   <div class="slds-global-header slds-grid slds-grid_align-spread slds-theme_alt-inverse">
+
     <div class="slds-global-header__item">
+      <button
+        type="button"
+        class="collspan"
+        (click)="toggleSideBar()"
+        [ngClass]="{ 'open': open, 'close': !open }">
+          <ngl-icon
+            icon="rows"
+            button="true"
+            category="utility"
+            size="large"></ngl-icon>
+      </button>
       <div class="slds-global-header__logo">
         <img src="/assets/images/logo-noname.svg" alt="">
       </div>

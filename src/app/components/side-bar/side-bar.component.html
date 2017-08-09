@@ -1,3 +1,5 @@
-<p>
-  side-bar works!
-</p>
+<div class="slds-tree_container" role="application">
+  <ul class="slds-tree" role="tree">
+    <app-menu-item *ngFor="let item of menuData; index as order" [item]="item" [order]="0"></app-menu-item>
+  </ul>
+</div>
