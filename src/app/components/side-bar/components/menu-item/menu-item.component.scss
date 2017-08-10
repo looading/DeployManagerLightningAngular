@@ -1,0 +1,6 @@
+:host ::ng-deep {
+  .slds-button {
+    transition: transform .4s cubic-bezier(.25,.8,.25,1);
+    color: #030303;
+  }
+}

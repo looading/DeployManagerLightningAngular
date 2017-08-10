@@ -9,8 +9,7 @@ import { MenuData, menuData } from './app-menu.config';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private open = true;
-  private navBarOpen: boolean;
+  private open = false;
 
   public menuData: MenuData = menuData;
 

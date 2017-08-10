@@ -14,6 +14,15 @@ export interface Notification {
   timeout?: number;
 }
 
+export interface User {
+  account: string;
+  state?: number;
+  level?: number;
+  tel?: string;
+  id?: number;
+  ctime?: string;
+  utime?: string;
+}
 
 @Injectable()
 export class StateService {

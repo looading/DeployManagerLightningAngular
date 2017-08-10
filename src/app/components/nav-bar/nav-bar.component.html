@@ -1,6 +1,8 @@
-<div class="slds-box slds-theme_shade">
-  <ngl-breadcrumbs assistiveText="Breadcrumbs" class="slds-m-top--large">
-    <a *nglBreadcrumb href="javascript:void(0)">Home</a>
-    <a *nglBreadcrumb routerLink="../support">Support</a>
-  </ngl-breadcrumbs>
-</div>
+<nav role="navigation">
+  <ol class="slds-breadcrumb slds-list--horizontal">
+    <li class="slds-breadcrumb__item" *ngFor="let item of paths; index as i">
+      <a  href="javascript:void(0)" (click)="navigateTo(i)">{{ item }}</a>
+    </li>
+  </ol>
+</nav>
+<hr/>

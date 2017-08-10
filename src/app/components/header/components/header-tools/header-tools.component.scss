@@ -1,0 +1,12 @@
+:host ::ng-deep {
+  .slds-dropdown__item {
+    span {
+      color: #182F5D;
+
+      .slds-icon {
+        fill: #53688D;
+        background-color: transparent;
+      }
+    }
+  }
+}

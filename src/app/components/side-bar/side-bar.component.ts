@@ -13,8 +13,6 @@ export class SideBarComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.menuData);
-
   }
 
 }

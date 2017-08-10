@@ -14,7 +14,8 @@ import {
   NavBarComponent,
   SideBarComponent,
   SideContentComponent,
-  MenuItemComponent, } from './components/';
+  MenuItemComponent,
+  NavBarItemComponent, } from './components/';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +23,7 @@ import { PagesModule } from './pages/pages.module';
 
 
 import { StateService } from './state.service';
+import { DeployService } from './deploy.service';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { StateService } from './state.service';
     SideBarComponent,
     SideContentComponent,
     MenuItemComponent,
+    NavBarItemComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { StateService } from './state.service';
   ],
   providers: [
     StateService,
+    DeployService,
   ],
   bootstrap: [AppComponent]
 })

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
+  private item = (new Array(100)).fill(1).map((item, index) => index);
   constructor() { }
 
   ngOnInit() {
